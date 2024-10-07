@@ -1,0 +1,51 @@
+/* Homepage container */
+.homepage {
+    position: relative;
+  }
+  
+  /* Image slider styling */
+  .image-slider {
+    height: 100vh; /* Full height for the slider */
+    overflow: hidden;
+  }
+  
+  .image-slider .carousel-item img {
+    object-fit: cover; /* Cover the area without stretching */
+    height: 100%; /* Ensure image fills the container */
+  }
+  
+  /* Caption styling */
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Button container */
+  .button-container {
+    position: absolute; /* Positioning over the slider */
+    bottom: 20px; /* Distance from bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust position */
+    z-index: 10; /* Ensure buttons are above other content */
+  }
+  
+  /* Button styling */
+  .button-container .btn {
+    font-size: 16px; /* Button text size */
+    padding: 10px 20px; /* Button padding */
+    margin: 5px; /* Margin between buttons */
+  }
+  
+  /* Media query for responsive design */
+  @media (max-width: 768px) {
+    .button-container .btn {
+      font-size: 14px; /* Smaller font size for mobile */
+      padding: 8px 16px; /* Adjust button padding */
+    }
+  
+    .carousel-caption {
+      font-size: 14px; /* Smaller caption text on mobile */
+    }
+  }
+  

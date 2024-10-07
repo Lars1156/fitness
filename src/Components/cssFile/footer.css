@@ -1,0 +1,115 @@
+/* Footer container */
+
+.footer-container {
+    background-color: whitesmoke;
+    color: black;
+    padding: 40px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Footer content grid */
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Footer section styles */
+  .footer-section {
+    flex-basis: 22%;
+    margin-bottom: 30px;
+  }
+  
+  .footer-section h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section h3 span {
+    color: #ffbe33;
+  }
+  
+  .footer-section p, .footer-section ul {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #ffbe33;
+  }
+  
+  /* Contact info styles */
+  .footer-section.contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section.contact-info i {
+    margin-right: 10px;
+    color: #ffbe33;
+  }
+  
+  /* Social media icons */
+  .footer-section.social-media .social-icons {
+    margin-top: 10px;
+  }
+  
+  .footer-section.social-media .social-icons a {
+    color: #121010;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  .footer-section.social-media .social-icons a:hover {
+    color: #ffbe33;
+  }
+  
+  /* Footer bottom */
+  .footer-bottom {
+    border-top: 1px solid #fdb10e;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 767px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-section {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
