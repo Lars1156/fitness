@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
-import './ForgotPassword.css'; // Custom CSS for styling
+import './cssFile/forgot.css'; 
 
 const ForgotPassword = () => {
   const [email, setEmail] = useState('');
@@ -8,24 +8,31 @@ const ForgotPassword = () => {
   const [otp, setOtp] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [otpError, setOtpError] = useState('');
 
   // Function to handle sending OTP to email
   const handleSendOTP = (e) => {
     e.preventDefault();
     console.log("Sending OTP to email:", email);
-    setOtpSent(true);
+    setOtpSent(true); 
   };
-
-  // Function to handle OTP verification and password reset
   const handlePasswordReset = (e) => {
     e.preventDefault();
-    if (newPassword === confirmPassword) {
-      console.log("OTP:", otp, "New Password:", newPassword);
+    const otpRegex = /^\d{4}$/;
+    if (!otpRegex.test(otp)) {
+      setOtpError('OTP must be a 4-digit number');
+      return;
     } else {
+      setOtpError('');
+    }
+
+    // Verify new passwords match
+    if (newPassword !== confirmPassword) {
       alert("Passwords do not match");
+    } else {
+      console.log("OTP:", otp, "New Password:", newPassword);
     }
   };
-
   return (
     <Container className="forgot-password-container">
       <h2 className="text-center">Forgot Password</h2>
@@ -51,11 +58,13 @@ const ForgotPassword = () => {
             <Form.Label>Enter OTP</Form.Label>
             <Form.Control
               type="text"
-              placeholder="Enter the OTP sent to your email"
+              placeholder="Enter 4-digit OTP"
               value={otp}
               onChange={(e) => setOtp(e.target.value)}
+              maxLength="4"
               required
             />
+            {otpError && <div className="error-text">{otpError}</div>}
           </Form.Group>
           <Form.Group controlId="formBasicNewPassword">
             <Form.Label>New Password</Form.Label>

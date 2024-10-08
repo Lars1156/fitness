@@ -1,0 +1,39 @@
+/* Forgot Password container */
+.forgot-password-container {
+    max-width: 300px; 
+    margin: 80px auto; 
+    padding: 15px; 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styling */
+  h2 {
+    margin-bottom: 15px;
+    color: #0c0c0c;
+  }
+  
+  input[type="email"], input[type="password"], input[type="text"] {
+    font-size: 14px; 
+    padding: 8px 10px; 
+    margin-bottom: 10px; 
+  }
+  
+  .error-text {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .forgot-password-container {
+      width: 90%;
+    }
+  
+    h2 {
+      font-size: 22px;
+    }
+  }
+  
