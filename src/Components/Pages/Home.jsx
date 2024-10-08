@@ -44,7 +44,7 @@ const Home = () => {
       </Carousel>
 
       <div className="button-container">
-        <Button variant="primary" className="mx-2" href="/login">Login</Button>
+        <Button variant="primary" className="mx-2" href="/loginPage">Login</Button>
         <Button variant="secondary" className="mx-2" href="/membership">Update Membership</Button>
       </div>
     </div>

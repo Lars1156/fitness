@@ -1,0 +1,51 @@
+/* Login page container */
+.login-page {
+    height: 100vh; /* Full viewport height */
+  }
+.login-container {
+    max-width: 300px; /* Reduced max width for form */
+    margin: 50px auto; /* Centering with some top margin */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff; /* White background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+  }
+  
+  /* Form header styling */
+  h2 {
+    margin-bottom: 20px;
+    color: #0c0c0c;
+  }
+  
+  /* Adjusted button styling */
+  button[type="submit"] {
+    font-size: 14px; /* Reduce font size */
+    padding: 8px 10px; /* Adjust padding to reduce size */
+    margin-top: 10px; /* Add some margin for spacing */
+  }
+  
+  /* Links container */
+  .links-container {
+    margin-top: 20px;
+  }
+  
+  /* Forgot password link */
+  .forgot-password {
+    display: block; /* Full-width link */
+    text-align: right; /* Align right */
+    color: #0c0c0c; /* Text color */
+    margin-bottom: 10px; /* Spacing */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-container {
+      width: 90%; /* Full width on mobile */
+    }
+  
+    h2 {
+      font-size: 24px; /* Adjust font size on mobile */
+    }
+  }
+  
