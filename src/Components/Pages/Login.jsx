@@ -13,6 +13,9 @@ const Login = () => {
   };
 
   return (
+    <>
+    <Button>AdminLogin</Button>
+    <Button>TrainerLogin</Button>
     <Container className="login-page d-flex justify-content-center align-items-center">
       <div className="login-container">
         <h2 className="text-center">Login to Absolute Fitness Club</h2>
@@ -52,6 +55,7 @@ const Login = () => {
         </div>
       </div>
     </Container>
+    </>
   );
 };
 
