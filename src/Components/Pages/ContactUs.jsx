@@ -27,6 +27,32 @@ const ContactUs = () =>{
                     </Button>
                   </Form>
                 </Col>
+                <Col md={6} className="mb-4">
+                 <h4 className="mb-3">OurInformation</h4>
+                 <p><strong>LoCation:</strong> 123 Fitness Street, Health City</p>
+                 <p><strong>Email:</strong> info@atuoFitnessgamil.com</p>
+                 <p><strong>Phone</strong>+919987445564</p>
+                 <h5 className="mt-4">Follow Us</h5>
+                       <div className="contact-social">
+                           <a href="#" className="me-3"><i className="fab fa-facebook-f"></i></a>
+                           <a href="#" className="me-3"><i className="fab fa-instagram"></i></a>
+                          <a href="#" className="me-3"><i className="fab fa-twitter"></i></a>
+                          <a href="#"><i className="fab fa-youtube"></i></a>
+                        </div>
+                          {/* Google Map Embed */}
+                      <div className="mt-4">
+                            <h5>Our Location</h5>
+                           <iframe
+                             title="Gym Location"
+                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509379!2d144.95373631531662!3d-37.816279742021785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43bf68cbf9%3A0xb1b8c9f1d9a58d71!2sFitness%20Club!5e0!3m2!1sen!2sus!4v1632554165050!5m2!1sen!2sus"
+                               width="100%"
+                               height="250"
+                               style={{ border: 0 }}
+                               allowFullScreen=""
+                               loading="lazy"
+                                ></iframe>
+                               </div>
+                </Col>
              </Row>
         </Container>
    
