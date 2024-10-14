@@ -1,6 +1,6 @@
 import React  from "react";
 import {Container , Row  , Col , Form , Button} from "react-bootstrap";
-
+import '../cssFile/contact.css'
 const ContactUs = () =>{
    return(<>
         <Container className="contact-us-section my-5 ">

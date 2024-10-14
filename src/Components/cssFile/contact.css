@@ -1,0 +1,17 @@
+.contact-social a {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .contact-social .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+  
+  .contact-social .btn i {
+    margin-right: 8px;
+  }
+  
