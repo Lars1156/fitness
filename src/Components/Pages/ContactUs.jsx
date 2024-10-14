@@ -33,12 +33,21 @@ const ContactUs = () =>{
                  <p><strong>Email:</strong> info@atuoFitnessgamil.com</p>
                  <p><strong>Phone</strong>+919987445564</p>
                  <h5 className="mt-4">Follow Us</h5>
-                       <div className="contact-social">
-                           <a href="#" className="me-3"><i className="fab fa-facebook-f"></i></a>
-                           <a href="#" className="me-3"><i className="fab fa-instagram"></i></a>
-                          <a href="#" className="me-3"><i className="fab fa-twitter"></i></a>
-                          <a href="#"><i className="fab fa-youtube"></i></a>
-                        </div>
+                 <h5 className="mt-4">Follow Us</h5>
+                   <div className="contact-social">
+                      <a href="https://facebook.com" className="btn btn-outline-primary me-2" target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-facebook-f"></i> Facebook
+                      </a>
+                      <a href="https://instagram.com" className="btn btn-outline-danger me-2" target="_blank" rel="noopener noreferrer">
+                         <i className="fab fa-instagram"></i> Instagram
+                      </a>
+                      <a href="https://twitter.com" className="btn btn-outline-info me-2" target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-twitter"></i> Twitter
+                      </a>
+                      <a href="https://youtube.com" className="btn btn-outline-danger" target="_blank" rel="noopener noreferrer">
+                         <i className="fab fa-youtube"></i> YouTube
+                     </a>
+                 </div>
                           {/* Google Map Embed */}
                       <div className="mt-4">
                             <h5>Our Location</h5>
@@ -50,8 +59,8 @@ const ContactUs = () =>{
                                style={{ border: 0 }}
                                allowFullScreen=""
                                loading="lazy"
-                                ></iframe>
-                               </div>
+                            ></iframe>
+                       </div>
                 </Col>
              </Row>
         </Container>
