@@ -17,6 +17,7 @@ const GymNavBar = ()  =>{
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
                 <Nav.Link as={Link} to="/" className="nav-item">Home</Nav.Link>
+                <Nav.Link as = {Link} to='/contact-us' className="nav-item">ContactUs</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Container>
